@@ -1,0 +1,80 @@
+#home{
+  margin-top: 5vh;
+
+  .menuButtons{
+    text-align: center;
+    .buttonText{
+      font-family: 'Black Han Sans';
+      text-shadow: 2px 2px white;
+      position: absolute;
+      color: $primary;
+      width: 300px;
+      height: 100px;
+      text-align: center;
+      margin: 0 auto;
+      top: 100px;
+      z-index: 5;
+    }
+    img{
+      height: 300px;
+      border: 5px solid white;
+      filter: grayscale(1);
+    }
+  }
+
+  .menuButtons:hover{
+    .buttonText{
+      color: white;
+      text-shadow: 5px 5px black;
+    }
+    img {
+      filter: grayscale(0);
+      animation: fadeFilter .5s;
+    }
+  }
+
+  @keyframes fadeFilter {
+    0%{filter:grayscale(1);}
+    100%{filter:grayscale(0);}
+  }
+
+  .titleDiv{
+    z-index: 0;
+    text-align: center;
+    margin: 30px;
+    h1{
+      font-family: "Black Han Sans";
+      color: white;
+      font-size: 60px;
+    }
+  }
+
+  .team{
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    img{
+      height: 250px;
+      border-radius: 50%;
+      border: solid 5px $primary;
+      margin-bottom: 20px;
+    }
+    color: white;
+    font-family: "Black Han Sans";
+    h3 {
+      text-shadow: 3px 3px $primary;
+    }
+  }
+}
+
+
+#home:before{
+ content:"";
+ position:absolute;
+ top:0;
+ bottom:0;
+ left:-15%;
+ width:1200px;
+ background: $primary;
+ transform:skew(-50deg);
+}

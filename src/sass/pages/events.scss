@@ -1,0 +1,20 @@
+#events {
+  .eventlist {
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    img {
+      width: 400px;
+    }
+    h2 {
+      color: $primary;
+      text-decoration: underline;
+    }
+    p{
+      color: white;
+    }
+  }
+
+}

@@ -1,0 +1,66 @@
+#header{
+  position: fixed;
+  z-index: 5;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  #headerButton {
+    background-color: $primary;
+    height: 65px;
+    width: 65px;
+    padding: 10px;
+    .bars{
+      text-align: center;
+      color: white;
+      width: 35px;
+      height: 35px;
+    }
+    border-radius: 50%;
+    border: solid 5px white;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+            transition:         transform .5s ease-in-out;
+  }
+
+  #headerButton:hover {
+    color: black;
+    box-shadow: 0 0 0 8px white;
+    text-decoration: none;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+
+  @keyframes rotate{
+    0% {transform: rotate(1deg)}
+    100%{transform: rotate(360deg)}
+  }
+
+  #headerMenu{
+    position: fixed;
+    left: -20px;
+    top: 85px;
+    display: none;
+    ul{
+      list-style-type: none;
+      li{
+        padding-top:10px;
+        font-size: 20px;
+        font-family: "Black Han Sans";
+        animation: menuSpace .5s linear;
+        a{
+          color: white;
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+        a:hover{
+          color: $primary;
+          text-decoration: none;
+          text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        }
+      }
+    }
+  }
+
+  @keyframes menuSpace {
+    0%{padding-top: 1px; opacity: 0;}
+    100%{padding-top: 10px; opacity: 1;}
+  }
+}
