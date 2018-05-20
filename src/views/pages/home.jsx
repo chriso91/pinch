@@ -5,7 +5,7 @@ import {Grid, Row, Col} from 'react-bootstrap';
 import singer from '../../assets/images/singersq.png';
 import greenguy from '../../assets/images/greenguysq.png';
 import openmic from '../../assets/images/openmicsq.png';
-import venu from '../../assets/images/venusq.png';
+import venu from '../../assets/images/pinchfull.png';
 import lamp from '../../assets/images/lampnearsq.png';
 import * as team0 from '../../assets/team.jsx';
 
@@ -17,8 +17,16 @@ export default class Home extends Component {
     }
   }
 
+  resize = () => this.setNarrow()
+
   componentDidMount() {
     this.changeWheel();
+    this.setNarrow();
+    window.addEventListener('resize', this.resize)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resize)
   }
 
   changeWheel(){
@@ -36,10 +44,22 @@ export default class Home extends Component {
     }, 5000);
   }
 
+  setNarrow(){
+    if(window.innerWidth >= 770){
+      this.refs.mainMenuNarrow.style.display = 'none';
+      this.refs.mainMenuWide.style.display = 'inline';
+    }
+    else if (window.innerWidth < 770){
+      this.refs.mainMenuWide.style.display = 'none';
+      this.refs.mainMenuNarrow.style.display = 'inline';
+    }
+  }
+
   render() {
     return (
       <div id="home">
-        <div id="mainmenu">
+        <div id="mainMenuWide" ref="mainMenuWide">
+          <div className="strip"></div>
           <Grid>
             <Row>
               <Col md={4} lg={4}>
@@ -49,13 +69,13 @@ export default class Home extends Component {
                 </a>
               </Col>
               <Col md={4} lg={4}>
-                <a href='#' className="menuButtons">
+                <a href='/location' className="menuButtons">
                   <h1 className="buttonText">Location</h1>
                   <img src={greenguy}/>
                 </a>
               </Col>
               <Col md={4} lg={4}>
-                <a href='#' className="menuButtons">
+                <a href='/social' className="menuButtons">
                   <h1 className="buttonText">Social Media</h1>
                   <img src={lamp} />
                 </a>
@@ -84,13 +104,40 @@ export default class Home extends Component {
                 </div>
               </Col>
               <Col md={4} lg={4}>
-                <a href='#' className="menuButtons">
+                <a href='/openmic' className="menuButtons">
                   <h1 className="buttonText">Open Mic</h1>
                   <img src={openmic}/>
                 </a>
               </Col>
             </Row>
           </Grid>
+        </div>
+
+        <div id="mainMenuNarrow" ref="mainMenuNarrow">
+          <div className="strip"></div>
+          <div className="titleDiv">
+            <h1>The Pinch Hitters Standup</h1>
+          </div>
+          <a href='/Events' className="menuButtons">
+            <h1 className="buttonText">Events</h1>
+            <img src={venu}/>
+          </a>
+          <a href='/location' className="menuButtons">
+            <h1 className="buttonText">Location</h1>
+            <img src={greenguy}/>
+          </a>
+          <a href='/social' className="menuButtons">
+            <h1 className="buttonText">Social Media</h1>
+            <img src={lamp} />
+          </a>
+          <a href='/bios' className="menuButtons">
+            <h1 className="buttonText">About Us</h1>
+            <img src={singer}/>
+          </a>
+          <a href='/openmic' className="menuButtons">
+            <h1 className="buttonText">Open Mic</h1>
+            <img src={openmic}/>
+          </a>
         </div>
       </div>
     );

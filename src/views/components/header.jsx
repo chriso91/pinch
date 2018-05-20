@@ -36,10 +36,10 @@ class Header extends Component {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/Events">Events</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Social</a></li>
+            <li><a href="location">Location</a></li>
+            <li><a href="/social">Social</a></li>
             <li><a href="/Bios">About Us</a></li>
-            <li><a href="#">Open Mic</a></li>
+            <li><a href="/openmic">Open Mic</a></li>
           </ul>
         </div>
 

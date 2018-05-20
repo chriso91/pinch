@@ -14,5 +14,28 @@ body{
   width: 85vw;
   border: 0;
   height: 3px;
-  background-image: linear-gradient(to right, black, $primary, black);
+  background-image: linear-gradient(to right, transparent, $primary, transparent);
+}
+
+.title {
+  color: white;
+  font-family: "Black Han Sans";
+  font-size: 80px;
+  z-index: 5;
+  text-decoration: underline;
+  text-align: center;
+  z-index: 5 !important;
+}
+
+@media (max-width: 770px) {
+  .title{
+    font-size: 60px;
+  }
+}
+
+.subTitle {
+  color: white;
+  text-align: center;
+  font-family: 'Miss Fajardose';
+  font-size: 40px;
 }

@@ -24,10 +24,10 @@ export const team = [
   },
   {
     name: "Kwome Amponsem",
-    words: "onek twok threek",
+    words: "Absurdist Dry Functional",
     picture: kwame,
     backpicture: backkwame,
-    bio: "Lorem ipsum dolor sit amet"
+    bio: "Kwame Amponsem is a D.C. based comedian seen throughout various showcases and stages such as the Pinch, Bier Baron, Drafthouse Comedy Theatre, and Magooby's Joke House.  His unique perspective and sharp wit combines to form a refreshingly modern, smart and relatable routine that entertains a variety of audiences across the DMV."
   },
   {
     name: "Hedi Sandberg",

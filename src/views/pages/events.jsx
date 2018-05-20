@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import {Grid, Row, Col} from 'react-bootstrap';
 import Header from '../components/header.jsx';
-import Footer from '../components/footer.jsx';
+import eventImg from '../../assets/images/event.png';
 import * as events0 from '../../assets/events/events.jsx';
 
 class Events extends Component {
@@ -15,12 +16,22 @@ class Events extends Component {
     return (
       <div id="events">
         <Header />
-        <div id="eventList"></div>
+        <h1 className="title">Upcoming Events</h1>
+        <div className="strip"></div>
+        <div className="eventImg"><img className="eventBack" src={eventImg}/></div>
         {this.state.events.map((d, i) =>
           <div className="eventlist" key={i}>
-            <h2>{d.name}</h2>
-            <img src={d.picture}/>
-            <p>{d.description}</p>
+            <Grid>
+              <Row>
+                <Col md={6} lg={6}>
+                  <h2>{d.name}</h2>
+                  <img src={d.picture}/>
+                </Col>
+                <Col md={6} lg={6}>
+                  <p>{d.description}</p>
+                </Col>
+              </Row>
+            </Grid>
             <hr className="shadowBar"/>
           </div>
         )}

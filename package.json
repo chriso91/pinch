@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "gh-pages": "^1.1.0",
+    "jest-fetch-mock": "^1.5.0",
     "json-loader": "^0.5.7",
     "webpack-cli": "^2.0.15"
   }

@@ -1,6 +1,28 @@
 #home{
   margin-top: 5vh;
 
+  .titleDiv{
+    z-index: 5;
+    text-align: center;
+    margin: 30px;
+    h1{
+      font-family: "Black Han Sans";
+      color: white;
+      font-size: 60px;
+    }
+  }
+
+  .strip{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:-15%;
+    width:1200px;
+    background: $primary;
+    transform:skew(-50deg);
+    z-index: -5;
+  }
+
   .menuButtons{
     text-align: center;
     .buttonText{
@@ -38,17 +60,6 @@
     100%{filter:grayscale(0);}
   }
 
-  .titleDiv{
-    z-index: 0;
-    text-align: center;
-    margin: 30px;
-    h1{
-      font-family: "Black Han Sans";
-      color: white;
-      font-size: 60px;
-    }
-  }
-
   .team{
     width: 300px;
     height: 350px;
@@ -65,16 +76,40 @@
       text-shadow: 3px 3px $primary;
     }
   }
-}
 
+  #mainMenuNarrow {
+    text-align: center;
 
-#home:before{
- content:"";
- position:absolute;
- top:0;
- bottom:0;
- left:-15%;
- width:1200px;
- background: $primary;
- transform:skew(-50deg);
+    .strip {
+      width:400px;
+      transform:skew(-40deg);
+    }
+
+    .titleDiv{
+      margin-bottom: -100px;
+    }
+
+    .menuButtons {
+      display: block;
+      margin-top: -50px;
+      .buttonText {
+        position: relative;
+        transform: translate(0, 100px);
+        text-decoration: none !important;
+      }
+    }
+
+    .menuButtons:hover{
+      text-decoration: none;
+      .buttonText{
+        color: white;
+        text-shadow: 5px 5px black;
+      }
+      img {
+        filter: grayscale(0);
+        animation: fadeFilter .5s;
+      }
+    }
+  }
+
 }
