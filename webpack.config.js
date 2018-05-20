@@ -12,7 +12,7 @@ module.exports = {
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js',
-    publicPath: '/static'
+    publicPath: "/pinch/"
   },
   module: {
     rules: [
