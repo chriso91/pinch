@@ -25,7 +25,7 @@
     "file-loader": "^1.1.11",
     "jquery-parallax.js": "^1.5.0",
     "node-sass": "^4.8.3",
-    "npm": "^6.0.0",
+    "npm": "^6.0.1",
     "react": "^16.3.0",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.3.0",

@@ -10,8 +10,9 @@ module.exports = {
     `${APP_DIR}/index.js`
   ],
   output: {
+    path: BUILD_DIR,
     filename: 'bundle.js',
-    path: '/'
+    publicPath: '/static'
   },
   module: {
     rules: [
