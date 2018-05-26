@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import {BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom';
+import {StaticRouter} from 'react-router';
 import Home from './views/pages/home';
 import Bios from './views/pages/bios';
 import Events from './views/pages/events';
@@ -12,7 +13,7 @@ import Social from './views/pages/social';
 require('./sass/site.scss');
 
 ReactDOM.render((
-     <BrowserRouter>
+      <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/bios" component={Bios}/>

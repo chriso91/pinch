@@ -63,7 +63,7 @@ export default class Home extends Component {
           <Grid>
             <Row>
               <Col md={4} lg={4}>
-                <a href='/Events' className="menuButtons">
+                <a href='/events' className="menuButtons">
                   <h1 className="buttonText">Events</h1>
                   <img src={venu}/>
                 </a>

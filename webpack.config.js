@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
-//const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const BUILD_DIR = path.resolve(__dirname, 'dist');
 const APP_DIR = path.resolve(__dirname, 'src');
@@ -12,6 +12,7 @@ module.exports = {
   ],
   output: {
     path: BUILD_DIR,
+    publicPath: '/',
     filename: 'bundle.js'
   },
   module: {
@@ -62,5 +63,11 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx']
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      inject: true,
+      template:  path.resolve('./index.html'),
+    }),
+  ]
 };
