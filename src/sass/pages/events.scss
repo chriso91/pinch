@@ -2,7 +2,6 @@
   .eventlist {
     margin: 0 auto;
     width: 80vw;
-    text-align: center;
     position: relative;
     z-index: 5;
     img {
@@ -14,7 +13,8 @@
       text-decoration: underline;
       text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     }
-    p{
+    p {
+      text-align: left;
       margin-top: 40px;
       font-size: 25px;
       color: white;
@@ -49,18 +49,24 @@
   #events{
     margin-top: 100px !important;
     .eventlist{
+      text-align: center;
       img{
-        width: 300px;
+        width: 250px;
       }
       p {
-        font-size: 20px;
+
+        margin: 10px  auto;
+        text-align: center;
+        font-size: 15px;
         width: 300px;
       }
     }
   }
+
   .eventImg{
     display: none;
   }
+
   .shadowBar{
     color: black;
   }

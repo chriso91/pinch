@@ -59,10 +59,13 @@
   }
 }
 
-@media(max-width: 600px){
+@media(max-width: 770px){
   #openmic {
+    word-wrap: break-word;
     margin-top: 100px;
-    .openWriteUp{
+    white-space: normal;
+    .openWriteUp {
+      font-size: 18px;
       left:50px;
       top: 200px;
     }

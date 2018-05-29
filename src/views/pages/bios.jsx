@@ -44,7 +44,7 @@ class Bios extends Component {
     return (
         <div id="bios">
           <Header />
-          <h1 className="aboutTitle">Meet the Pinch Hitters</h1>
+          <h1 className="title">Meet the Pinch Hitters</h1>
           <div className="member">
             {this.state.team.map((d, i) =>
               <Grid key={i}>
@@ -67,7 +67,6 @@ class Bios extends Component {
             <span className="liveLove">Live...</span> <span className="liveLove">Love...</span> Laugh
           </h1>
         </div>
-
     );
   }
 }

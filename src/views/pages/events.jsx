@@ -23,11 +23,11 @@ class Events extends Component {
           <div className="eventlist" key={i}>
             <Grid>
               <Row>
-                <Col md={6} lg={6}>
+                <Col sm={12} md={6} lg={6}>
                   <h2>{d.name}</h2>
                   <img src={d.picture}/>
                 </Col>
-                <Col md={6} lg={6}>
+                <Col sm={12} md={6} lg={6}>
                   <p>{d.description}</p>
                 </Col>
               </Row>

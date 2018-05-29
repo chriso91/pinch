@@ -58,7 +58,11 @@
     }
   }
 
-  @media (max-width: 767px){
+  @media (max-width: 770px){
+    .title{
+      margin-top: 80px;
+    }
+
     .member {
       .aleft{
         text-align: center;
