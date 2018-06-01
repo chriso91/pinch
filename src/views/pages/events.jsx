@@ -28,7 +28,9 @@ class Events extends Component {
                   <img src={d.picture}/>
                 </Col>
                 <Col sm={12} md={6} lg={6}>
+                  <p className="date">Date: {d.date}</p>
                   <p>{d.description}</p>
+                  <a href={d.link}>{d.linktitle}</a>
                 </Col>
               </Row>
             </Grid>

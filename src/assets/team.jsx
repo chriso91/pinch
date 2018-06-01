@@ -31,7 +31,7 @@ export const team = [
   },
   {
     name: "Hedi Sandberg",
-    words: "Sarcastic * Qucik-witted * Raunchy",
+    words: "Sarcastic Qucik-witted Raunchy",
     picture: hedi,
     backpicture: backhedi,
     bio: "Hedi is a D.C. based comedian; performing Stand Up at various open mics, showcases and competitions. She was part of the Lady Laughs Comedy festival in Madison, Wisconsin and has been making her comedy trek along the East Coast from Richmond, VA all the way to Massachusetts. On top of being one of the hosts at The Pinch open mic, Hedi is also a House Comic for the Laugh Index Theatre. Performing stand up gives Hedi purpose and energy; she finds the main source of her nonsexual pleasure comes from making other people laugh. She hopes to share this joy with the world through her unique style of deadpan humor, sarcasm and quick wit. When Hedi is not out and about telling jokes she can be found in bed eating pints of vegan ice cream while watching videos of cakes being decorated.  "
