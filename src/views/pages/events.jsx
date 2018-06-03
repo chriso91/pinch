@@ -17,6 +17,7 @@ class Events extends Component {
       <div id="events">
         <Header />
         <h1 className="title">Upcoming Events</h1>
+        <h3 className="subTitle">Let's Make an Event Out of It</h3>
         <div className="strip"></div>
         <div className="eventImg"><img className="eventBack" src={eventImg}/></div>
         {this.state.events.map((d, i) =>

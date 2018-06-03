@@ -1,11 +1,38 @@
 #location{
-    .outsideLocation{
-      width: 400px;
+  text-align: center;
+    .stripe {
+      position: fixed;
+      background-color: $primary;
+      width: 100px;
+      height: 150vh;
+      top: -10px;
+      z-index: -10;
+      transform: skew(-40deg);
     }
-    .green{
-      width: 400px;
-      position: absolute;
-      top: 250px;
-      left: 350px;
+    .s1{
+      left: 0vw;
+    }
+    .s2{
+      left: 20vw;
+    }
+    .s3{
+      left: 50vw;
+    }
+    img {
+      height: 200px;
+      border: 5px solid white;
+      box-shadow: 0 0 0 5px $primary;
+    }
+    .locationdesc {
+      margin-top: 20px;
+      font-family: "Black Han Sans";
+      color: white;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      font-size: 20px;
+    }
+    .address{
+      margin: 0 auto;
+      font-size: 30px;
+      margin-top: 30px;
     }
 }

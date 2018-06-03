@@ -45,6 +45,7 @@ class Bios extends Component {
         <div id="bios">
           <Header />
           <h1 className="title">Meet the Pinch Hitters</h1>
+          <h3 className="subTitle">Get to Know Us</h3>
           <div className="member">
             {this.state.team.map((d, i) =>
               <Grid key={i}>

@@ -26,7 +26,7 @@ class OpenMic extends Component {
         The usual time of the open mic is sign up starting at 8:30 pm and
         the show at 9:00 pm but this is subject to change depending on
         the other events that are happening at this venu.  Check facebook
-        to </p>
+        to confirm the start of the mic.</p>
       </div>
     )
   }

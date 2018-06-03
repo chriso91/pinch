@@ -9,6 +9,7 @@ class Social extends Component {
       <div id='social'>
         <Header />
         <h1 className='title'>Social Media</h1>
+        <h3 className="subTitle">Let's Get Social</h3>
         <div className='socialSites'>
           <Grid>
             <Row>

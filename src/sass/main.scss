@@ -25,6 +25,7 @@ body{
   text-decoration: underline;
   text-align: center;
   z-index: 5 !important;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 @media (max-width: 770px) {
@@ -38,4 +39,15 @@ body{
   text-align: center;
   font-family: 'Miss Fajardose';
   font-size: 40px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.link {
+  color: $primary;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.link:hover {
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
